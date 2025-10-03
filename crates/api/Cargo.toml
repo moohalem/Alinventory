@@ -5,8 +5,11 @@ edition = "2024"
 
 [dependencies]
 actix-web = "4.11.0"
+# askama_actix = "0.14.0"
+# askama = "0.12.1"
 inventory_core = { path = "../core", package = "core" }
 serde = { version = "1.0", features = ["derive"] }
+rust-embed = "8.0.0"
 
-# Update rust-embed to version 8
-rust-embed = "8.7.2"
+# Add clap for command-line argument parsing
+clap = { version = "4.0", features = ["derive"] }
